@@ -1,2 +1,2 @@
-# Elegant-Weeding
-A platform to provide elegant weeding for everyone
+# Elegant-Wedding
+A platform to provide elegant wedding for everyone
