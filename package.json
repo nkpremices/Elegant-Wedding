@@ -7,7 +7,7 @@
     "start": "nodemon --exec babel-node ./server/server.js",
     "test": "NODE_ENV=test nyc --reporter=text ./node_modules/.bin/mocha --recursive ./server/tests/* --exit --require @babel/register",
     "lint": "eslint ./",
-    "coverage": "nyc npm run cover && nyc report --reporter=text-lcov  | coveralls "
+    "coverage": "nyc npm run test && nyc report --reporter=text-lcov  | coveralls "
   },
   "repository": {
     "type": "git",
