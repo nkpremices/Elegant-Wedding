@@ -1,6 +1,7 @@
 .login-header{
-    width: 100%;
+    background-color: rgba($color: $theme-primary-white,$alpha: .8);
     min-height: 60px;
+    width: 100%;
     float: left;
     position: fixed;
     -webkit-box-shadow:0px 0px 8px $theme-primary-color;
