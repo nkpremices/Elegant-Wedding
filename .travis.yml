@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- v10.15.3
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: rCHZbOW7cQcYbZD1DhPdXab73Lk07C18MVTR/dKYbaeuvBA08pLfJpJCNkNnM9mVNY3H2Om9n3yfcwJW5lj5236/paKKwqcgmQ/WaAKR26895wjl2eKNKHl64AsUT9mQtuOgC1KYNc8mm/gmxvHrOcjMw3FQ44OsZWbiHo8R4oA5XLinY9ydBmh2MV/VA1mVE/VQu52+0wnKE95El7imx35VubEIHfHROlJaNIyaB0siG8owxiN+nUMXWOO9tVAk1K76w9evyvjVxmAFaFtIfcHFsEEFgYHrUOVGApGVqPJuUwPuPwCAmNba+q2ngnTaJQVDW0d6+bIudcwqf6YJ73AotaNJkpIyx16nE63xp4Uhmfb38w4w35XEwiz+0qYq0hYmtWnWaL+oR69rOtL8+yXntPDUxLiX8aACwIKtGL8O8zmyoVVT2SZxcnSmmfjKkxRDtVEfvOCPmLHrzOv4tSXYtWUsKVjMkoQ9W/WGe8qfgz5TJjuiu20+J8HBXIrIuxgfdhB1atgC4Qol1SZv1x+Wu2ZoyAH79u3bvfas4BKcn4NFrYxO+i+VNxGt4OX5Twz5/Ywz71ujSKU0hmX+7go+1JW5rNZck13VODJshvYuGmuZVZT63T/mEoGqskQhpnMYoT5TjlJWzgPPsPPTvf53EUi9WF93w5u/bnkHvtw=
+  app: elegant-wedding
+  on: backend
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+script:
+- npm run test
