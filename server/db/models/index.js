@@ -1,14 +1,7 @@
 import Sequelize from 'sequelize';
 import environment from '../../configs/environments';
 
-const sequelize = new Sequelize(
-    environment.database.name,
-    environment.database.user,
-    environment.database.password,
-    {
-        dialect: 'postgres',
-    },
-);
+const sequelize = new Sequelize(environment.database.url);
 
 const models = {
     Users: sequelize.import('./users'),
