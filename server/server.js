@@ -1,5 +1,6 @@
 import '@babel/polyfill';
 import express from 'express';
+import path from 'path';
 import registerMiddleware from './middlewares/register.app';
 import router from './api/routes/index';
 import environement from './configs/environments';
@@ -16,6 +17,8 @@ registerMiddleware(app);
 // App for v1
 app.use('/api', router);
 
+// Set a static folder
+app.use(express.static(path.join(__dirname, '../UI')));
 
 sequelize.sync({ force: syncDbOnStart }).then(() => {
     app.listen(environement.app.port, () => {
