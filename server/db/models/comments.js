@@ -1,14 +1,16 @@
+/* eslint-disable func-names */
 
-
-module.exports = (sequelize, DataTypes) => {
-    const comments = sequelize.define('comments', {
-        id: DataTypes.INTEGER,
+const comments = (sequelize, DataTypes) => {
+    const Comments = sequelize.define('comments', {
         message: DataTypes.STRING,
-        createdAt: DataTypes.DATE,
-    }, {});
-    comments.associate = function (models) {
-        comments.belongsTo(models.users);
-        comments.belongsTo(models.posts);
+    });
+
+    Comments.associate = function (models) {
+        Comments.belongsTo(models.Users);
+        Comments.belongsTo(models.Posts);
     };
-    return comments;
+
+    return Comments;
 };
+
+export default comments;

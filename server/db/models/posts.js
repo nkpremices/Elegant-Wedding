@@ -1,8 +1,6 @@
-
-
-module.exports = (sequelize, DataTypes) => {
-    const posts = sequelize.define('posts', {
-        id: DataTypes.INTEGER,
+/* eslint-disable func-names */
+const posts = (sequelize, DataTypes) => {
+    const Posts = sequelize.define('posts', {
         header: DataTypes.STRING,
         description: DataTypes.STRING,
         location: DataTypes.STRING,
@@ -16,13 +14,16 @@ module.exports = (sequelize, DataTypes) => {
         pic8: DataTypes.STRING,
         pic9: DataTypes.STRING,
         pic10: DataTypes.STRING,
-        createdAt: DataTypes.DATE,
         views: DataTypes.INTEGER,
-    }, {});
-    posts.associate = function (models) {
-        posts.belongsTo(models.users);
-        posts.belongsTo(models.packages);
-        posts.belongsTo(models.services);
+    });
+
+    Posts.associate = (models) => {
+        Posts.belongsTo(models.Users);
+        Posts.belongsTo(models.Packages);
+        Posts.belongsTo(models.Services);
     };
-    return posts;
+
+    return Posts;
 };
+
+export default posts;

@@ -1,15 +1,16 @@
+/* eslint-disable func-names */
 
-
-module.exports = (sequelize, DataTypes) => {
-    const subscriptions = sequelize.define('subscriptions', {
-        id: DataTypes.INTEGER,
+const subscriptions = (sequelize, DataTypes) => {
+    const Subscriptions = sequelize.define('subscriptions', {
         startDate: DataTypes.DATE,
         endDate: DataTypes.DATE,
-    }, {});
-    subscriptions.associate = function (models) {
-        subscriptions.belongsTo(models.users);
-        subscriptions.belongsTo(models.paymentInfo);
-        subscriptions.belongsTo(models.packages);
+    });
+    Subscriptions.associate = function (models) {
+        Subscriptions.belongsTo(models.Users);
+        Subscriptions.belongsTo(models.PaymentInfo);
+        Subscriptions.belongsTo(models.Packages);
     };
     return subscriptions;
 };
+
+export default subscriptions;

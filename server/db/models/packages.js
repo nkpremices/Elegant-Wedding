@@ -1,14 +1,13 @@
+/* eslint-disable func-names */
 
-
-module.exports = (sequelize, DataTypes) => {
-    const packages = sequelize.define('packages', {
-        id: DataTypes.INTEGER,
+const packages = (sequelize, DataTypes) => {
+    const Packages = sequelize.define('packages', {
         name: DataTypes.STRING,
         numberOfPost: DataTypes.INTEGER,
         period: DataTypes.STRING,
-    }, {});
-    packages.associate = function (models) {
-    // associations can be defined here
-    };
-    return packages;
+    });
+
+    return Packages;
 };
+
+export default packages;

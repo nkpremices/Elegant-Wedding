@@ -1,14 +1,16 @@
+/* eslint-disable func-names */
 
-
-module.exports = (sequelize, DataTypes) => {
-    const bookings = sequelize.define('bookings', {
-        id: DataTypes.INTEGER,
-        createdAt: DataTypes.DATE,
+const bookings = (sequelize, DataTypes) => {
+    const Bookings = sequelize.define('bookings', {
         bookedDate: DataTypes.DATE,
-    }, {});
-    bookings.associate = function (models) {
-        bookings.belongsTo(models.users);
-        bookings.belongsTo(models.posts);
+    });
+
+    Bookings.associate = function (models) {
+        Bookings.belongsTo(models.Users);
+        Bookings.belongsTo(models.Posts);
     };
-    return bookings;
+
+    return Bookings;
 };
+
+export default bookings;

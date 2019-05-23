@@ -1,14 +1,14 @@
+/* eslint-disable func-names */
 
-
-module.exports = (sequelize, DataTypes) => {
-    const postRatings = sequelize.define('postRatings', {
-        id: DataTypes.INTEGER,
-        createdAt: DataTypes.DATE,
+const postRatings = (sequelize, DataTypes) => {
+    const PostRatings = sequelize.define('postRatings', {
         bookedDate: DataTypes.DATE,
-    }, {});
-    postRatings.associate = function (models) {
-        postRatings.belongsTo(models.users);
-        postRatings.belongsTo(models.posts);
+    });
+    PostRatings.associate = function (models) {
+        PostRatings.belongsTo(models.Users);
+        PostRatings.belongsTo(models.Posts);
     };
-    return postRatings;
+    return PostRatings;
 };
+
+export default postRatings;

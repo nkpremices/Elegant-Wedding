@@ -1,14 +1,15 @@
+/* eslint-disable func-names */
 
-
-module.exports = (sequelize, DataTypes) => {
-    const paymentInfo = sequelize.define('paymentInfo', {
-        id: DataTypes.INTEGER,
+const paymentInfos = (sequelize, DataTypes) => {
+    const PaymentInfos = sequelize.define('paymentInfos', {
         fullName: DataTypes.STRING,
         expirationDate: DataTypes.STRING,
         cvc: DataTypes.INTEGER,
-    }, {});
-    paymentInfo.associate = function (models) {
-        paymentInfo.belongsTo(models.users);
+    });
+    PaymentInfos.associate = function (models) {
+        PaymentInfos.belongsTo(models.Users);
     };
-    return paymentInfo;
+    return PaymentInfos;
 };
+
+export default paymentInfos;
