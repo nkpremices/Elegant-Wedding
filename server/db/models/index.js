@@ -3,8 +3,8 @@ import environment from '../../configs/environments';
 
 const sequelize = new Sequelize(
     environment.database.name,
-    process.env.DATABASE_USER,
-    process.env.DATABASE_PASSWORD,
+    environment.database.user,
+    environment.database.password,
     {
         dialect: 'postgres',
     },
