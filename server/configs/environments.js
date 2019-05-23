@@ -30,7 +30,7 @@ const envName = process.env.NODE_ENV;
  */
 const environments = {
     test: {
-        name: envName,
+        name: 'test',
         app: {
             port: appPort,
         },
@@ -46,7 +46,7 @@ const environments = {
     },
 
     development: {
-        name: envName,
+        name: 'development',
         app: {
             port: appPort,
         },
@@ -62,7 +62,7 @@ const environments = {
     },
 
     staging: {
-        name: envName,
+        name: 'staging',
         app: {
             port: appPort,
         },
@@ -79,7 +79,7 @@ const environments = {
 };
 
 // Determine which environment we are in
-const currentEnvironment = process.env.NODE_ENV.toLowerCase() || '';
+const currentEnvironment = envName.toLowerCase() || '';
 
 /* Check that the current environment is one the envs
    defined above, if not default to dev
