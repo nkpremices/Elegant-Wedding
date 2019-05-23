@@ -14,12 +14,6 @@ dotenv.config();
 const appPort = process.env.PORT;
 const saltingRounds = process.env.SALTING_ROUNDS;
 const jwtKey = process.env.JWT_KEY;
-const dbUser = process.env.DB_USER;
-const dbHost = process.env.DB_HOST;
-const devDbName = process.env.DEV_DB_NAME;
-const testDbName = process.env.TEST_DB_NAME;
-const dbPassword = process.env.DB_PASSWORD;
-const dbPort = process.env.DB_PORT;
 const envName = process.env.NODE_ENV;
 
 /**
@@ -35,11 +29,7 @@ const environments = {
             port: appPort,
         },
         database: {
-            user: dbUser,
-            host: dbHost,
-            name: testDbName,
-            password: dbPassword,
-            port: dbPort,
+            url: process.env.TEST_DB_URL,
         },
         saltingRounds,
         jwtKey,
@@ -51,27 +41,19 @@ const environments = {
             port: appPort,
         },
         database: {
-            user: dbUser,
-            host: dbHost,
-            name: devDbName,
-            password: dbPassword,
-            port: dbPort,
+            url: process.env.DEV_DB_URL,
         },
         saltingRounds,
         jwtKey,
     },
 
     staging: {
-        name: 'staging',
+        name: 'test',
         app: {
             port: appPort,
         },
         database: {
-            user: dbUser,
-            host: dbHost,
-            name: testDbName,
-            password: dbPassword,
-            port: dbPort,
+            url: process.env.TEST_DB_URL,
         },
         saltingRounds,
         jwtKey,
