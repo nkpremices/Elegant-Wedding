@@ -3,8 +3,12 @@ import express from 'express';
 import registerMiddleware from './middlewares/register.app';
 import router from './api/routes/index';
 import environement from './configs/environments';
+// eslint-disable-next-line no-unused-vars
+import models, { sequelize } from './db/models/index';
 
 const app = express({ strict: true });
+const syncDbOnStart = environement.name === 'development'
+    || environement.name === 'test';
 
 // Register middleware
 registerMiddleware(app);
@@ -12,9 +16,12 @@ registerMiddleware(app);
 // App for v1
 app.use('/api', router);
 
-app.listen(environement.app.port, () => {
-    // eslint-disable-next-line
-    console.log(`Server now listening at localhost:${environement.app.port}`);
+
+sequelize.sync({ force: syncDbOnStart }).then(() => {
+    app.listen(environement.app.port, () => {
+        // eslint-disable-next-line
+        console.log(`Server now listening on port ${environement.app.port} in ${environement.name} mode!`);
+    });
 });
 
 export default app;
