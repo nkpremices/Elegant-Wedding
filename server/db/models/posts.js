@@ -16,13 +16,13 @@ module.exports = (sequelize, DataTypes) => {
         pic8: DataTypes.STRING,
         pic9: DataTypes.STRING,
         pic10: DataTypes.STRING,
-        owner: DataTypes.INTEGER,
-        service_id: DataTypes.INTEGER,
-        created_at: DataTypes.DATE,
+        createdAt: DataTypes.DATE,
         views: DataTypes.INTEGER,
     }, {});
     posts.associate = function (models) {
-    // associations can be defined here
+        posts.belongsTo(models.users);
+        posts.belongsTo(models.packages);
+        posts.belongsTo(models.services);
     };
     return posts;
 };

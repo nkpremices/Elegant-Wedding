@@ -47,13 +47,7 @@ module.exports = {
         pic10: {
             type: Sequelize.STRING,
         },
-        owner: {
-            type: Sequelize.INTEGER,
-        },
-        service_id: {
-            type: Sequelize.INTEGER,
-        },
-        created_at: {
+        createdAt: {
             type: Sequelize.DATE,
         },
         views: {
