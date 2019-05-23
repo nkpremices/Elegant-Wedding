@@ -5,6 +5,7 @@ const paymentInfos = (sequelize, DataTypes) => {
         fullName: DataTypes.STRING,
         expirationDate: DataTypes.STRING,
         cvc: DataTypes.INTEGER,
+        accountNumber: DataTypes.STRING,
     });
     PaymentInfos.associate = function (models) {
         PaymentInfos.belongsTo(models.Users);
