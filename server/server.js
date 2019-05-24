@@ -7,8 +7,7 @@ import environement from './configs/environments';
 import models, { sequelize } from './db/models/index';
 
 const app = express({ strict: true });
-const syncDbOnStart = environement.name === 'development'
-    || environement.name === 'test';
+const syncDbOnStart = environement.name === 'test';
 
 // Register middleware
 registerMiddleware(app);

@@ -5,6 +5,8 @@ const packages = (sequelize, DataTypes) => {
         name: DataTypes.STRING,
         numberOfPost: DataTypes.INTEGER,
         period: DataTypes.STRING,
+        price: DataTypes.FLOAT,
+
     });
 
     return Packages;
