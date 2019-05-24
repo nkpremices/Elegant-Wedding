@@ -1,16 +1,14 @@
 .featured {
   margin-top: 4em;
-
-
   &-cards {
-    margin-left: 12em;
     display: flex;
     justify-items: center;
     list-style: none;
+    justify-content: center;
 
     & .card-feature {
       color: $theme-primary-color;
-      flex-basis: 30%;
+      flex-basis: 25%;
       background-color: $theme-primary-white;
       box-shadow: 8px 8px 8px rgba($color: $theme-primary-color, $alpha: 0.4);
       margin-right: 2em;

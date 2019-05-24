@@ -55,7 +55,7 @@ html, body {
 }
 .sliding-header-slider .slide img {
   width: 20%;
-  height: 144em;
+  height: 50em;
   float: left;
 }
 .sliding-header .front-face {
@@ -303,10 +303,10 @@ html, body {
   margin-top: 4em;
 }
 .featured-cards {
-  margin-left: 12em;
   display: flex;
   justify-items: center;
   list-style: none;
+  justify-content: center;
 }
 .featured-cards .card-feature {
   color: rgba(182, 77, 126, 0.979);
@@ -653,6 +653,201 @@ footer .copyright {
     width: 100%;
     float: none;
   }
+}
+.signup-header {
+  width: 100%;
+  min-height: 60px;
+  float: left;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 8px rgba(182, 77, 126, 0.979);
+  -moz-box-shadow: 0px 0px 8px rgba(182, 77, 126, 0.979);
+}
+.signup-header .signup-icon-div {
+  float: left;
+}
+.signup-header .signup-icon-logo {
+  width: 50px;
+  height: 50px;
+}
+.signup-header .signup-name-div {
+  width: 200px;
+  float: left;
+  font-size: 20px;
+  width: 80px;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: rgba(182, 77, 126, 0.979);
+}
+.signup-header .signup-buttons-join {
+  float: right;
+  display: inline-block;
+  width: 110px;
+  height: 60px;
+  border: 0px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-header .signup-buttons-join.login button {
+  color: rgba(182, 77, 126, 0.979);
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px rgba(182, 77, 126, 0.979);
+  -moz-box-shadow: 0px 0px 6px rgba(182, 77, 126, 0.979);
+  width: 80px;
+}
+.signup-header .signup-buttons-join.sinup button {
+  color: white;
+  background-color: rgba(182, 77, 126, 0.979);
+  border-radius: 10px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px white;
+  -moz-box-shadow: 0px 0px 6px white;
+  width: 80px;
+}
+
+.signup-setup_body_container {
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-setup_body_container .signup-container {
+  width: 680px;
+  height: inherit;
+  position: absolute;
+}
+.signup-setup_body_container .signup-container ::before, .signup-setup_body_container .signup-container ::after {
+  display: table;
+  content: " ";
+}
+.signup-setup_body_container .signup-container .signup-task-content {
+  display: none;
+  margin-top: 130px;
+  min-height: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 0px solid #e3e3e3;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 6px rgba(182, 77, 126, 0.979);
+  -moz-box-shadow: 0px 0px 6px rgba(182, 77, 126, 0.979);
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-logo-content {
+  width: 300px;
+  margin-top: 0px;
+  height: 40px;
+  border: 0px solid blue;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-logo-content .signup-img-logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: 0px solid blue;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-logo-content-title {
+  width: 300px;
+  margin-top: 0px;
+  border: 0px solid blue;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-logo-content-title .signup-web-name {
+  color: rgba(182, 77, 126, 0.979);
+  font-size: 20PX;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content {
+  margin-top: 30px;
+  border: 0px solid gray;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-input-field-div {
+  width: 300px;
+  margin-top: 10px;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-input-field-div span {
+  size: 13px;
+  color: var(--rayol-primary-color);
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-input-field-div .signup-input-field {
+  width: 96%;
+  height: 32px;
+  border: 1px solid rgba(182, 77, 126, 0.979);
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-input-field-div .signup-input-field.confirm {
+  margin-top: 10px;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-buttons-div {
+  width: 47%;
+  height: 40px;
+  border: 0px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-buttons-div .signup-button {
+  margin-top: 15px;
+  float: left;
+  border: 0px solid gray;
+  width: 46%;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-buttons-div .signup-button.cancel {
+  padding-right: 11px;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-buttons-div .signup-button.cancel .signup-btn-cancel {
+  width: 100%;
+  height: 35px;
+  color: rgba(182, 77, 126, 0.979);
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 6px rgba(182, 77, 126, 0.979);
+  -moz-box-shadow: 0px 0px 6px rgba(182, 77, 126, 0.979);
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-buttons-div .signup-button.create {
+  padding-left: 11px;
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-input-content .signup-buttons-div .signup-button.create .signup-btn-create {
+  width: 100%;
+  height: 35px;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(182, 77, 126, 0.979);
+}
+.signup-setup_body_container .signup-container .signup-task-content .signup-content-image-presenter img {
+  width: 250px;
+  height: 250px;
+  float: right;
+  margin-top: -250px;
+  border: 0px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-setup_body_container .signup-container .signup-task-content.active {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
