@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Elegant Wedding</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/download.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta content="True" name="HandheldFriendly" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <header class="login-header">
+      <div class="icon-div">
+        <img class="icon-logo" src="../assets/download.png" />
+      </div>
+      <div class="name-div">
+        <span class="login-web-name"
+          ><b><strong>Elegent</strong></b
+          >Wedding</span
+        >
+      </div>
+    </header>
+    <main>
+      <div class="error" id="error"></div>
+      <div class="payment-card">
+        
+        <div class="payment-card__front">
+            <div class="payment-card__logo" id="show-logo">
+                <img src="../assets/Visa_Inc._logo.svg.png" alt="visa" id="card-logo">
+              </div>
+          <div class="focus">
+            <div class="payment-card__number">
+              <input
+                type="text"
+                name="card-number"
+                id="card-number"
+                placeholder="XXXX - XXXX - XXXX - XXXX"
+                minlength="19"
+                maxlength="19"
+                required
+              />
+            </div>
+            <div class="payment-card__name">
+              <input
+                type="text"
+                name="card-name"
+                id="card-name"
+                placeholder="Account Name"
+                minlength="4"
+                required
+              />
+
+              <input
+                type="text"
+                name="month"
+                id="month"
+                placeholder="M"
+                class="payment-card__expire"
+                minlength="1"
+                maxlength="2"
+                required
+              />
+              <input
+                type="text"
+                name="year"
+                id ="year"
+                placeholder="Y"
+                class="payment-card__expire"
+                minlength="2"
+                maxlength="4"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="payment-card__back">
+          <div class="payment-card__ribbon"></div>
+          <input type="text" name="CVC" id="cvc" placeholder="CVC" minlength="3" maxlength="3"/>
+        </div>
+      </div>
+         <div class="validate">
+           <a href="#" class="validate-button" id="submit-btn">Submit</a>
+         </div>
+    </main>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
