@@ -34,6 +34,39 @@ const bookings = {
                     data,
                 });
             }
+
+            return res.status(404).json({
+                status: 404,
+                message: 'No bookings found!',
+            });
+        });
+    },
+    async bookingsPerHeader(req, res) {
+        const { header } = req.params;
+
+        await models.Bookings.findAll({
+            include: [
+                {
+                    model: models.Posts,
+                    where: {
+                        header,
+                    },
+                },
+
+            ],
+
+        }).then((data) => {
+            if (data.length > 0) {
+                return res.status(200).json({
+                    status: 200,
+                    message: `Bokkings of ${header}`,
+                    data,
+                });
+            }
+            return res.status(404).json({
+                status: 404,
+                message: 'No bookings found!',
+            });
         });
     },
 
