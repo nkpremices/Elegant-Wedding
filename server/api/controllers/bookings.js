@@ -45,9 +45,12 @@ const bookings = {
         const { header } = req.params;
 
         await models.Bookings.findAll({
+            attributes: ['id', 'bookedDate', 'createdAt',
+                'updatedAt', 'userId', 'postId'],
             include: [
                 {
                     model: models.Posts,
+                    attributes: [],
                     where: {
                         header,
                     },
