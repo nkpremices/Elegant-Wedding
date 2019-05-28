@@ -10,9 +10,7 @@
 const sendError = (status, resultObj, res, error) => {
     const obj = resultObj;
     obj.status = status;
-    obj.error = {
-        message: error,
-    };
+    obj.error = error;
     res.status(status).json(resultObj);
 };
 
