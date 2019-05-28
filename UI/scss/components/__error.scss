@@ -1,0 +1,17 @@
+.error{
+    position: absolute;
+    top: 20%;
+    left: 29%;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 3em;
+    background-color: $theme-primary-red;
+    width: 35%;
+    visibility: hidden;
+    height: 10%;
+
+    & p {
+        color: $theme-primary-white;
+        margin: 6% 2% 6% 2%;
+    }
+}

@@ -1,4 +1,5 @@
 @import './base/animations';
+@import './utils/_mixins';
 @import './base/base';
 @import './base/color';
 @import './layout/_slider';
@@ -11,4 +12,5 @@
 @import './component/__nav-header';
 @import './layout/__user-home';
 @import './component/__slider-major';
-
+@import './layout/__payment';
+@import './components/__error';
