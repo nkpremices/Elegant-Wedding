@@ -310,7 +310,7 @@ html, body {
 }
 .featured-cards .card-feature {
   color: rgba(182, 77, 126, 0.979);
-  flex-basis: 30%;
+  flex-basis: 25%;
   background-color: white;
   box-shadow: 8px 8px 8px rgba(182, 77, 126, 0.4);
   margin-right: 2em;
@@ -848,6 +848,217 @@ footer .copyright {
 }
 .signup-setup_body_container .signup-container .signup-task-content.active {
   display: block;
+}
+
+.userprofile-top-navigation {
+  width: inherit;
+  background-color: white;
+  z-index: 1000;
+  float: unset;
+  -webkit-box-shadow: 0px 0px 8px rgba(182, 77, 126, 0.979);
+  -moz-box-shadow: 0px 0px 8px rgba(182, 77, 126, 0.979);
+}
+.userprofile-top-navigation .userprofile-logo-img {
+  float: left;
+  height: inherit;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userprofile-top-navigation .userprofile-logo-img .userprofile-icon-logo {
+  margin-top: 7px;
+  height: 40px;
+}
+.userprofile-top-navigation .userprofile-name-div {
+  display: inline-block;
+  width: 80px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userprofile-top-navigation .userprofile-name-div .userprofile-web-name {
+  color: rgba(182, 77, 126, 0.979);
+  font-size: 20PX;
+  margin-left: 80px;
+}
+.userprofile-top-navigation .userprofile-profile-nav {
+  margin-top: -53px;
+  height: 59px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.userprofile-top-navigation .userprofile-profile-nav .userprofile-icon-notification-nav {
+  height: inherit;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userprofile-top-navigation .userprofile-profile-nav .userprofile-icon-notification-nav .userprofile-icon-notification-icon-nav {
+  width: 20px;
+  height: 20px;
+  border: 0px solid gray;
+}
+.userprofile-top-navigation .userprofile-profile-nav .userprofile-icon-notification-nav .userprofile-icon-notification-icon-nav .userprofile-icon-notification {
+  width: 20px;
+  height: 20px;
+}
+.userprofile-top-navigation .userprofile-profile-nav .userprofile-icon-notification-nav .userprofile-icon-notification-icon-nav .userprofile-notification-text-nav {
+  width: 17px;
+  margin-left: 12px;
+  margin-top: -35px;
+}
+.userprofile-top-navigation .userprofile-profile-nav .userprofile-icon-notification-nav .userprofile-icon-notification-icon-nav .userprofile-notification-text-nav .userprofile-notification-text {
+  font-size: 9px;
+  background-color: green;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  color: white;
+  padding-bottom: 2px;
+  border-radius: 50%;
+  margin-top: 0px;
+}
+.userprofile-top-navigation .userprofile-profile-nav .userprofile-icon-profile-nav {
+  border: 0px solid gray;
+  width: 60px;
+  height: 55px;
+  margin-left: 60px;
+  margin-top: -60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userprofile-top-navigation .userprofile-profile-nav .userprofile-icon-profile-nav .userprofile-icon-profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+body .userprofile-body-contant-navigation {
+  width: 98%;
+  height: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+body .userprofile-body-contant-navigation .userprofile-setting_body {
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 400px;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 4px rgba(182, 77, 126, 0.979);
+  -moz-box-shadow: 0px 0px 4px rgba(182, 77, 126, 0.979);
+}
+body .userprofile-body-contant-navigation .userprofile-setting_body .userprofile-settings_profile {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .userprofile-body-contant-navigation .userprofile-setting_body .userprofile-settings_profile span {
+  font-size: 15px;
+}
+body .userprofile-body-contant-navigation .userprofile-setting_body .userprofile-settings_profile .userprofile-settings_profile_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books {
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 400px;
+  position: relative;
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 4px rgba(182, 77, 126, 0.979);
+  -moz-box-shadow: 0px 0px 4px rgba(182, 77, 126, 0.979);
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-books-title {
+  width: 100%;
+  margin-top: 10px;
+  border: 0px solid gray;
+  height: 30px;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-books-title span {
+  font-size: 18px;
+  margin-left: 10px;
+  font-style: initial;
+  color: rgba(182, 77, 126, 0.979);
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-books-container {
+  border: 0px solid gray;
+  width: 100%;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-books-container .userprofile-books-item {
+  border: 0px solid gray;
+  margin: 10px;
+  width: 95%;
+  background-color: #cca8b9;
+  border-radius: 5px;
+  padding-top: 10px;
+  height: 60px;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-books-container .userprofile-books-item .userprofile-books-item-name {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-books-container .userprofile-books-item .userprofile-books-item-address {
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-books-container .userprofile-books-item .userprofile-books-item-cost {
+  font-size: 17px;
+  float: right;
+  margin-right: 20px;
+  color: #913939;
+  text-decoration: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-security-container {
+  border: 0px solid gray;
+  width: 100%;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-security-container .userprofile-security {
+  border: 0px solid gray;
+  margin: 10px;
+  width: 95%;
+  height: 80px;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprofile-security-container .userprofile-security label {
+  font-size: 17px;
+  text-decoration: underline;
+  color: #1c1c1d;
 }
 
 /*# sourceMappingURL=style.css.map */

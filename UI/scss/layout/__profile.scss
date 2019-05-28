@@ -1,0 +1,113 @@
+body{
+  background-color: $theme-white-sec;
+  & .userprofile-body-contant-navigation{
+    width:98%;
+    height:100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: $theme-white-sec;
+    & .userprofile-setting_body{
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 400px;
+      position: relative;
+      //border: 1px solid gray;
+      border-radius: 10px;
+      -webkit-box-shadow:0px 0px 4px $theme-primary-color;
+      -moz-box-shadow:0px 0px 4px $theme-primary-color;
+  
+      & .userprofile-settings_profile{
+        padding: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & span{
+          font-size: 15px;
+        }
+        & .userprofile-settings_profile_image{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+      }
+    }
+    & .userprofile-menu-item-books{
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 400px;
+      position: relative;
+      margin-top:10px; 
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 10px;
+      -webkit-box-shadow:0px 0px 4px $theme-primary-color;
+     -moz-box-shadow:0px 0px 4px $theme-primary-color;
+      & .userprofile-books-title{
+         width: 100%;
+         margin-top: 10px;
+         border: 0px solid gray;
+         height: 30px;
+         & span{
+           font-size: 18px;
+           margin-left: 10px;
+           font-style: initial;
+           color: $theme-primary-color;
+           
+         }
+      }
+      & .userprofile-books-container{
+        border: 0px solid gray;
+        width: 100%;
+        & .userprofile-books-item{
+          border: 0px solid gray;
+          margin: 10px;
+          width: 95%;
+          background-color: #cca8b9;
+          border-radius: 5px;
+          padding-top: 10px;
+          height: 60px;
+          & .userprofile-books-item-name{
+             font-size: 17px;
+             margin-top: 10px;
+             margin-left: 10px;
+          }
+          & .userprofile-books-item-address{
+            font-size: 13px;
+            margin-top: 10px;
+            margin-left: 10px;
+         }
+         & .userprofile-books-item-cost{
+          font-size: 17px;
+          float: right;
+          margin-right: 20px;
+          color: rgb(145, 57, 57);
+          text-decoration: alpha($color: #000000);
+          margin-top: 10px;
+          margin-left: 10px;
+       }
+        }
+      }
+      & .userprofile-security-container{
+        border: 0px solid gray;
+        width: 100%;
+        & .userprofile-security{
+          border: 0px solid gray;
+          margin: 10px;
+          width: 95%;
+          height: 80px;
+          border-radius: 5px;
+          padding-top: 10px;
+          & label{
+            font-size: 17px;
+            text-decoration: underline;
+            color: rgb(28, 28, 29);
+          }
+        }
+      }
+    }
+    }
+}
