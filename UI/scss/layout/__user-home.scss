@@ -1,0 +1,172 @@
+.user-home {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.post {
+  transform: translate(-50%, -15%);
+  width: 65vw;
+  box-shadow: 8px 8px 8px 8px rgba($color: $theme-primary-color, $alpha: 0.1);
+  &-header {
+    display: flex;
+    margin: 2% 2% 2% 2%;
+    & img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 2% 0 0 2%;
+    }
+  }
+  &-user {
+    font-size: 2.2em;
+    margin: 3% 3% 2% 2%;
+  }
+
+  &-content {
+    &__img {
+      margin: 4%;
+      & img {
+        z-index: 300;
+        margin: 0% 0% 1% 1%;
+        width: 100%;
+        height: 45%;
+      }
+      & .movement {
+        &-arrow {
+          display: flex;
+          z-index: 400;
+          position: absolute;
+          width: 92vw;
+          top: 38%;
+          left: 6%;
+          & a.left {
+            visibility: hidden;
+            font-size: 10.4em;
+            background-color: $theme-primary-color;
+            text-decoration: none;
+            color: $theme-primary-white;
+            margin: 0 59% 0 -2%;
+          }
+
+          & a.right {
+            font-size: 10.4em;
+            background-color: $theme-primary-color;
+            text-decoration: none;
+            color: $theme-primary-white;
+            margin-left: 2%;
+          }
+        }
+
+        &-dots {
+          position: absolute;
+          z-index: 400;
+          top: 84%;
+          width: 9vw;
+          left: 45%;
+
+          & div {
+            float: left;
+            margin-right: 10%;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background-color: rgba($color: $theme-primary-color, $alpha: 0.5);
+          }
+        }
+      }
+    }
+
+    &__description {
+      font-size: 2.3em;
+      & h3 {
+        text-align: center;
+      }
+      & .description {
+        padding: 2em;
+
+        &-location {
+          margin: 2% 0 2% 0;
+          display: flex;
+          & .money{
+            font-size: 3.3em;
+            margin-left: 54%;
+            color: $theme-primary-color;
+          }
+        }
+      }
+    }
+
+    & .book-me{
+      margin: 6% 0 4% 0%;
+      &__button:visited,
+      &__button:link{
+        text-decoration: none;
+        color: $theme-primary-white;
+        background-color: $theme-primary-color;
+        padding: 1.8em 2.8em;
+        
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .user-home {
+    left: 84%;
+  }
+  .post {
+    width: 97vw;
+    &-content {
+      &__img {
+        & .movement {
+          &-arrow {
+            & a.left {
+              margin: 0 86% 0 -2%;
+            }
+          }
+        }
+      }
+  
+      &__description {
+        font-size: 3em;
+        & .money{
+          margin-left: 47% !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px){
+  .post {
+    width: 248vw;
+    box-shadow: none;
+    transform: translate(-11%, -10%);
+
+    &-content {
+      &__img {
+        & img {
+          width: 100%;
+        }
+        & .movement {
+          &-arrow {
+            top: 29%;
+            & a.left {
+              margin: 0 221% 0 -5%;
+            }
+            & a.right{
+              margin-left: 5%;
+            }
+          }
+        }
+      }
+  
+      &__description {
+        font-size: 3.8em;
+        & .money{
+          margin-left: 39% !important;
+        }
+      }
+    }
+  }
+}
