@@ -73,6 +73,26 @@ const bookings = {
             });
         });
     },
+    async createComment(req, res) {
+        const { message, postId } = req.body;
+        const { id, firstName, lastName } = req.user;
+        await models.Comments.create(
+            {
+                message,
+                userId: id,
+                postId,
+            },
+
+        );
+        const comment = message;
+        return res.status(201).json({
+            status: 201,
+            message: 'Thank you for contributing to this post!',
+            data: {
+                firstName, lastName, comment,
+            },
+        });
+    },
 
 };
 
