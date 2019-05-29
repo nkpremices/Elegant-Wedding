@@ -1,15 +1,17 @@
 import moment from 'moment';
 import models, { sequelize } from '../models';
+import generateHash from '../../helpers/generate.hash';
 
 
 const data = {
     async createUser() {
+        const hashedPass = await generateHash('niwemuhuza1!');
         await models.Users.create(
             {
-                username: 'Kay',
                 firstName: 'Mireille',
                 lastName: 'Niwemuhuza',
                 email: 'kay@gmail.com',
+                password: hashedPass,
                 type: 'customer',
                 phone: '0788484848',
                 createdAt: moment(new Date()),

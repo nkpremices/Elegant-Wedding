@@ -6,9 +6,9 @@ const bookings = {
         const { bookedDate, userId, postId } = req.body;
         await models.Bookings.create(
             {
-                bookedDate: req.body.bookedDate,
-                userId: req.body.userId,
-                postId: req.body.postId,
+                bookedDate,
+                userId,
+                postId,
             },
 
         );
