@@ -1,0 +1,104 @@
+.userprofile-top-navigation{
+	width:inherit;
+	background-color: $theme-primary-white;
+    z-index: 1000;
+    float: unset;
+    -webkit-box-shadow:0px 0px 8px $theme-primary-color;
+    -moz-box-shadow:0px 0px 8px $theme-primary-color;
+
+    & .userprofile-logo-img{
+      float: left;
+      height:inherit;
+      width:50px;
+        display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .userprofile-icon-logo{
+        margin-top:7px;
+        height:40px;
+        }
+      }
+    & .userprofile-name-div{
+      display: inline-block;
+      width: 80px;
+      height: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .userprofile-web-name{
+        color: $theme-primary-color;
+        font-size: 20PX;
+        margin-left:80px; 
+        }
+    }  
+    & .userprofile-profile-nav{
+      margin-top:-53px;
+      height:59px;;
+      width:120px;
+      margin-left:auto;
+      margin-right:0;
+
+      & .userprofile-icon-notification-nav{
+        height:inherit;
+        width:60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .userprofile-icon-notification-icon-nav{
+          width:20px;
+          height:20px;
+          border:0px solid gray;
+          & .userprofile-icon-notification{
+            width:20px;
+            height:20px;
+            }
+          & .userprofile-notification-text-nav{
+            width:17px;
+            margin-left:12px;
+            margin-top:-35px;
+            & .userprofile-notification-text{
+              font-size:9px;
+              background-color:green;
+              padding-left:5px;
+              padding-right:5px;
+              padding-top:2px;
+              color:white;
+              padding-bottom:2px;
+              border-radius:50%;
+              margin-top:0px;
+              }
+            }  
+          }
+        }
+      & .userprofile-icon-profile-nav{
+        border:0px solid gray;
+        width:60px;
+        height:55px;
+        margin-left:60px;
+        margin-top:-60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .userprofile-icon-profile{
+          width:35px;
+          height:35px;
+          border-radius:50%;
+          }
+        }  
+      }
+    
+	}
