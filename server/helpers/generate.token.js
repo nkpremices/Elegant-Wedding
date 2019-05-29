@@ -11,7 +11,11 @@ import environment from '../configs/environments';
 const createToken = (tempUser) => {
     const playLoad = {
         id: tempUser.id,
+        firstName: tempUser.firstName,
+        lastName: tempUser.lastName,
         email: tempUser.email,
+        type: tempUser.type,
+        phone: tempUser.phone,
     };
     const options = {
         expiresIn: '1d',

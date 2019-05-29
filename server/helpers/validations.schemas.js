@@ -47,11 +47,7 @@ export default {
             .required(),
     }),
     signin: Joi.object().keys({
-        username: string
-            .regex(/^[A-Za-z]+$/).min(3)
-            .max(30)
-            .required(),
-
+        email,
         password,
     }),
 };

@@ -27,3 +27,6 @@ typings/
 
 # Ignore Package-lock file
 package-lock.json
+
+# remove the mac os folder config file
+.DS_Store
