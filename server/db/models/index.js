@@ -1,7 +1,9 @@
 import Sequelize from 'sequelize';
 import environment from '../../configs/environments';
 
-const sequelize = new Sequelize(environment.database.url);
+const sequelize = new Sequelize(environment.database.url, {
+    logging: false,
+});
 
 const models = {
     Users: sequelize.import('./users'),

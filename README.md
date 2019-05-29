@@ -2,3 +2,10 @@
 
 # Elegant-Wedding
 A platform to provide elegant wedding for everyone
+
+## Endpoints 
+
+| Ressource URL | Methods  | Description  |
+| ------- | --- | --- |
+| / | GET | The index page |
+| /api/auth/signup| POST | Sign up a new user(customer, service provider or admin) |

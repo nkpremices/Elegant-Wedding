@@ -1,15 +1,12 @@
 const users = (sequelize, DataTypes) => {
     const Users = sequelize.define('users', {
-        username: {
-            type: DataTypes.STRING,
-            unique: true,
-        },
         firstName: DataTypes.STRING,
         lastName: DataTypes.STRING,
         email: {
             type: DataTypes.STRING,
             unique: true,
         },
+        password: DataTypes.STRING,
         type: DataTypes.STRING,
         phone: DataTypes.STRING,
     });
