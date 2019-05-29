@@ -9,6 +9,7 @@ const users = (sequelize, DataTypes) => {
         password: DataTypes.STRING,
         type: DataTypes.STRING,
         phone: DataTypes.STRING,
+        isLoggedIn: DataTypes.BOOLEAN,
     });
 
     Users.findByLogin = async (login) => {
