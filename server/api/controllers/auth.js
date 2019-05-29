@@ -80,7 +80,8 @@ export default {
                 },
             });
 
-            const verify = await comparePasswords(tempUser[0].dataValues, req.body.password);
+            const verify = await comparePasswords(tempUser[0].dataValues,
+                req.body.password);
 
             if (verify) {
             // Sending the result
