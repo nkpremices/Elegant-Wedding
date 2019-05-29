@@ -9,3 +9,4 @@ A platform to provide elegant wedding for everyone
 | ------- | --- | --- |
 | / | GET | The index page |
 | /api/auth/signup| POST | Sign up a new user(customer, service provider or admin) |
+| /api/auth/signin| POST | Sign in a user(customer, service provider or admin) |
