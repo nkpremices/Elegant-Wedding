@@ -10,7 +10,7 @@ import defaultErrorController from './api/controllers/default';
 import home from './api/routes/home';
 
 const app = express({ strict: true });
-const syncDbOnStart = environement.name === 'development';
+const syncDbOnStart = environement.name === 'test';
 
 // Register middleware
 registerMiddleware(app);
