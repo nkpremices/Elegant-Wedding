@@ -9,6 +9,6 @@ const router = express();
 
 router.use('/auth', authRouter);
 router.use('/customers', customerRouter);
-router.use('/serviceProviders', serviceProviderRouter);
+router.use('/providers', serviceProviderRouter);
 
 export default router;

@@ -3,6 +3,7 @@ import express from 'express';
 import registerMiddleware from './middlewares/register.app';
 import router from './api/routes/index';
 import environement from './configs/environments';
+
 // eslint-disable-next-line no-unused-vars
 import models, { sequelize } from './db/models/index';
 
