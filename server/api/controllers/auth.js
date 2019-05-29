@@ -9,6 +9,7 @@ import models, { sequelize } from '../../db/models';
 import generateHash from '../../helpers/generate.hash';
 import sendError from '../../helpers/send.error';
 import generateToken from '../../helpers/generate.token';
+import comparePasswords from '../../helpers/compare.passwords';
 
 
 export default {
@@ -44,11 +45,10 @@ export default {
 
             // Creating a token for the user
             const token = generateToken(tempUser.dataValues);
-            // Sending the result
 
+            // Sending the result
             result.status = status;
             result.message = 'User registered successfully';
-            console.log(phone);
 
             result.data = {
                 token,
@@ -57,11 +57,52 @@ export default {
                 lastName: tempUser.dataValues.lastName,
                 email: tempUser.dataValues.email,
             };
+
             res.status(status).json(result);
         } catch (error) {
             if (error.name === 'SequelizeUniqueConstraintError') {
-                const emailErrMessage = 'Email already in use';
-                sendError(205, result, res, emailErrMessage);
+                const message = 'Email already in use';
+                sendError(205, result, res, message);
+            } else sendError(400, result, res, error);
+        }
+    },
+
+    signin: async (req, res) => {
+        // Initialising variables
+        const result = {};
+        const status = 200;
+        let tempUser;
+
+        try {
+            tempUser = await models.Users.findAll({
+                where: {
+                    email: req.body.email,
+                },
+            });
+
+            const verify = await comparePasswords(tempUser[0].dataValues, req.body.password);
+
+            if (verify) {
+            // Sending the result
+
+                result.status = status;
+                result.message = 'User logged in successfully';
+
+                // Creating a token for the user
+                const token = generateToken(tempUser[0].dataValues);
+
+                result.data = {
+                    token,
+                };
+                res.status(status).json(result);
+            } else {
+                const err = 'Invalid password';
+                sendError(404, result, res, err);
+            }
+        } catch (error) {
+            if (tempUser.length === 0) {
+                const mess = 'A user with the provided email doesn\'t exit';
+                sendError(404, result, res, mess);
             } else sendError(400, result, res, error);
         }
     },
