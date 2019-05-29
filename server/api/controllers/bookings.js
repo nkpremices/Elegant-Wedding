@@ -3,11 +3,12 @@ import models, { sequelize } from '../../db/models';
 
 const bookings = {
     async createBooking(req, res) {
-        const { bookedDate, userId, postId } = req.body;
+        const { bookedDate, postId } = req.body;
+        const { id } = req.user;
         await models.Bookings.create(
             {
                 bookedDate,
-                userId,
+                userId: id,
                 postId,
             },
 
@@ -16,7 +17,7 @@ const bookings = {
             status: 201,
             message: 'Successfully booked',
             data: {
-                bookedDate, userId, postId,
+                bookedDate, id, postId,
             },
         });
     },
