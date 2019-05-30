@@ -1061,4 +1061,353 @@ body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprof
   color: #1c1c1d;
 }
 
+.admin-container {
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  height: 88%;
+  background-color: #f5f5f5;
+}
+.admin-container .body-contant-navigation {
+  width: 98%;
+  margin-top: 10px;
+  height: 100%;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+.admin-container .body-contant-navigation .tast_content_main {
+  width: 100%;
+  background-color: white;
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-spacing: 0;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  border-collapse: collapse;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation {
+  width: 250px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px #A3A3A3;
+  -moz-box-shadow: 0px 0px 6px #A3A3A3;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-profile-section {
+  width: auto;
+  height: 60px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-profile-section .left-navigation-dawer-profile-section-profile-image-div {
+  height: inherit;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-profile-section .left-navigation-dawer-profile-section-profile-image-div .left-navigation-dawer-profile-section-profile-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-profile-section .left-navigation-dawer-profile-section-profile-name-div {
+  width: 155px;
+  height: 15px;
+  margin-left: 60px;
+  margin-top: -47px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-profile-section .left-navigation-dawer-profile-section-profile-name-div .left-navigation-dawer-profile-section-profile-name {
+  font-size: 14px;
+  color: gray;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-profile-section .left-navigation-dawer-profile-section-profile-status-div {
+  width: 155px;
+  height: 15px;
+  margin-left: 60px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-profile-section .left-navigation-dawer-profile-section-profile-status-div .left-navigation-dawer-profile-section-profile-status {
+  font-size: 12px;
+  color: green;
+  font-family: Roboto-Medium;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-opened-buttons {
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  border: 0px solid gray;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #f0ecec;
+  margin-top: 3px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-opened-buttons .left-navigation-dawer-opened-buttons-icons-div {
+  height: inherit;
+  margin-left: 10px;
+  width: 30px;
+  border: 0px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-opened-buttons .left-navigation-dawer-opened-buttons-icons-div .left-navigation-dawer-opened-buttons-icons {
+  width: 15px;
+  height: 15px;
+  fill: rgba(182, 77, 126, 0.979);
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-opened-buttons .left-navigation-dawer-opened-buttons-title-div {
+  margin-left: 40px;
+  width: 160px;
+  height: 25px;
+  margin-top: -26px;
+  float: left;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-opened-buttons .left-navigation-dawer-opened-buttons-title-div .left-navigation-dawer-opened-buttons-title .home-links {
+  color: gray;
+  font-size: 13px;
+  text-decoration: none;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-opened-buttons .left-navigation-dawer-opened-buttons-title-div .left-navigation-dawer-opened-buttons-title .home-links :focus {
+  color: rgba(182, 77, 126, 0.979);
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-opened-buttons:hover {
+  border-left: 3px solid rgba(182, 77, 126, 0.979);
+  background-color: #ECEFF1;
+}
+.admin-container .body-contant-navigation .tast_content_main tr td .left-navigation #left-nav-container .left-navigation-drawer .left-navigation-dawer-opened-buttons.visible {
+  border-left: 3px solid rgba(182, 77, 126, 0.979);
+  background-color: #f8f1f8;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td {
+  width: 100%;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content {
+  padding: 15px;
+  margin-left: 10px;
+  width: 98%;
+  height: 100%;
+  border-color: rgba(182, 77, 126, 0.979);
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px #A3A3A3;
+  -moz-box-shadow: 0px 0px 6px #A3A3A3;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list {
+  background-color: white;
+  border: 0px solid gray;
+  width: 96;
+  margin: 0;
+  height: inherit;
+  width: 100%;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header {
+  border: 0px solid green;
+  height: 40px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title {
+  border: 0px solid gray;
+  height: 40px;
+  width: 200px;
+  border: 0px solid gray;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title.title {
+  width: 80px;
+  float: left;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title.title span {
+  font-size: 20px;
+  height: 40px;
+  color: rgba(182, 77, 126, 0.979);
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title.search {
+  border: 0px solid gray;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title.search input {
+  height: 25px;
+  padding-left: 10px;
+  margin: 0;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title.search .search_contents_tools {
+  float: right;
+  margin: 0;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title.search .g-h-menu {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border: 0px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title.search .g-h-menu.inbox.reflesh button {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(182, 77, 126, 0.979);
+  height: 2.5em;
+  width: 2.5em;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-header .g-h-title.search .g-h-menu.inbox.reflesh button img {
+  height: 10px;
+  width: 10px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .line {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-menus {
+  border: 0px solid green;
+  height: 40px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-menus .g-h-menu {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border: 0px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-menus .g-h-menu .buttons-headers {
+  background-color: rgba(182, 77, 126, 0.979);
+  height: 35px;
+  width: 35px;
+  border-radius: 0.8em;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content-menus .g-h-menu .buttons-headers img {
+  height: 10px;
+  width: 10px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table {
+  overflow: auto;
+  border: 0px solid gray;
+  width: 100%;
+  max-height: 500px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-spacing: 0;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr {
+  height: 50px;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  border-top-color: inherit;
+  border-right-color: inherit;
+  border-bottom-color: inherit;
+  border-left-color: inherit;
+  cursor: pointer;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check {
+  width: 50px;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check .chk_unchk_icon {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check .chk_unchk_icon input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check .chk_unchk_icon .checkmark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check .chk_unchk_icon .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check .chk_unchk_icon:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check .chk_unchk_icon input:checked ~ .checkmark {
+  background-color: rgba(182, 77, 126, 0.979);
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check .chk_unchk_icon input:checked ~ .checkmark:after {
+  display: block;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.check .chk_unchk_icon .checkmark:after {
+  left: 7px;
+  top: 5px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td .img-user-row {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.name {
+  font-size: 14px;
+  color: rgba(182, 77, 126, 0.979);
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.date {
+  font-size: 12px;
+  color: gray;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.feed {
+  font-size: 12px;
+  color: gray;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr .g-t-td.sender {
+  font-size: 14px;
+  color: rgba(182, 77, 126, 0.979);
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr:hover {
+  background-color: #ECEFF1;
+}
+.admin-container .body-contant-navigation .tast_content_main tr .task-content-td .task-content .content-list .content_list_table .groups-table .g-t-tr.tr-backgound {
+  background-color: #FAFAFA;
+}
+
 /*# sourceMappingURL=style.css.map */
