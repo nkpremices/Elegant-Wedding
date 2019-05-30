@@ -2,7 +2,7 @@
 
 const postRatings = (sequelize, DataTypes) => {
     const PostRatings = sequelize.define('postRatings', {
-        bookedDate: DataTypes.DATE,
+        rate: DataTypes.INTEGER,
     });
     PostRatings.associate = function (models) {
         PostRatings.belongsTo(models.Users);
