@@ -136,4 +136,3 @@ const slider = (position, side,position_left,position_right) => {
 
 }
 
-
