@@ -7,9 +7,24 @@ import Joi from 'joi';
 
 const string = Joi.string();
 const email = string.email()
-    .regex(/^[a-z._\-0-9]*[@][A-Za-z]*[.][a-z]{2,4}$/).required();
+    .regex(/^[a-z._\-0-9]*[@][A-Za-z]*[.][a-z]{2,4}$/)
+    .required();
+
 const password = string
-    .regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})/).min(5).required();
+    .regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})/)
+    .min(5)
+    .required();
+
+const name = string
+    .regex(/^[A-Za-z]+$/)
+    .min(3)
+    .max(30)
+    .required();
+
+const number = Joi
+    .number()
+    .integer()
+    .required();
 
 /**
  * An object to define all the validation schemas
@@ -20,19 +35,9 @@ const password = string
  */
 export default {
     signup: Joi.object().keys({
-        firstName: string
-            .regex(/^[A-Za-z]+$/)
-            .min(3)
-            .max(30)
-            .required(),
-
-        lastName: string
-            .regex(/^[A-Za-z]+$/).min(3)
-            .max(30)
-            .required(),
-
+        firstName: name,
+        lastName: name,
         email,
-
         password,
 
         type: string
@@ -49,5 +54,16 @@ export default {
     signin: Joi.object().keys({
         email,
         password,
+    }),
+    createPackage: Joi.object().keys({
+        name,
+        numberOfPosts: number,
+
+        period: string
+            .alphanum()
+            .regex(/[1-9]*[mMyY]/)
+            .required(),
+
+        price: number,
     }),
 };
