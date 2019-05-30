@@ -3,7 +3,7 @@
 const packages = (sequelize, DataTypes) => {
     const Packages = sequelize.define('packages', {
         name: DataTypes.STRING,
-        numberOfPost: DataTypes.INTEGER,
+        numberOfPosts: DataTypes.INTEGER,
         period: DataTypes.STRING,
         price: DataTypes.FLOAT,
 
