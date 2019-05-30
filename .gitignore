@@ -24,3 +24,6 @@ node_modules/
 
 # Ignore Package-lock file
 package-lock.json
+
+# Ignore .DS_Store file
+.DS_Store
