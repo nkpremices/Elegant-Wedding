@@ -97,7 +97,7 @@ export default {
                 };
                 res.status(status).json(result);
             } else {
-                const err = 'Invalid password';
+                const err = 'Incorrect password';
                 sendError(404, result, res, err);
             }
         } catch (error) {

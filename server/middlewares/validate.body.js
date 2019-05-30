@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 /**
  * Schemas description file
  * @name validationMiddleware
@@ -6,6 +7,7 @@
 import _ from 'lodash';
 import Joi from 'joi';
 import Schemas from '../helpers/validations.schemas';
+import sendError from '../helpers/send.error';
 
 /**
  * A function to save an account when requested by the controller
@@ -36,6 +38,36 @@ const nameFieldErrorMessage = ' name can not contain '
 const emailFieldErrorMessage = 'Invalid email provided';
 
 const phoneFieldErrorMessage = 'Invalid phone number provided';
+
+const periodFieldErrorMessage = 'Invalid period provided. '
+    + 'Period must have the format: 8m, 1y, etc';
+
+const customiseMessage = (Message) => {
+    let message = Message;
+    if (message.includes('password with value')) {
+        message = passwordFieldError;
+    }
+    if (message
+        .includes('firstName with value')) {
+        message = `First${nameFieldErrorMessage}`;
+    }
+    if (message
+        .includes('lastName with value')) {
+        message = `Last${nameFieldErrorMessage}`;
+    }
+    if (message
+        .includes('email with value')) {
+        message = emailFieldErrorMessage;
+    }
+    if (message.includes('phone with value')) {
+        message = phoneFieldErrorMessage;
+    }
+    if (message.includes('period with value')) {
+        message = periodFieldErrorMessage;
+    }
+    return message;
+};
+
 
 export default (useJoiError = false, schema) => {
     const _useJoiError = _.isBoolean(useJoiError) && useJoiError;
@@ -69,39 +101,13 @@ export default (useJoiError = false, schema) => {
                         let message = err.details[0].message
                             .replace(/['"]/g, '');
 
-                        if (message.includes('password with value')) {
-                            message = passwordFieldError;
-                        }
-                        if (message
-                            .includes('firstName with value')) {
-                            message = `First${nameFieldErrorMessage}`;
-                        }
-                        if (message
-                            .includes('lastName with value')) {
-                            message = `Last${nameFieldErrorMessage}`;
-                        }
-                        if (message
-                            .includes('email with value')) {
-                            message = emailFieldErrorMessage;
-                        }
-                        if (message.includes('phone with value')) {
-                            message = phoneFieldErrorMessage;
-                        }
-                        const errorObj = {
-                            status: 400,
-                            error: {
-                                message,
-                            },
-                        };
-
+                        message = customiseMessage(message);
                         // Default error
-                        const defaultErr = {
-                            status: 400,
-                            error: 'Invalid request data. Try again',
-                        };
+                        const defaultErr = 'Invalid request data. Try again';
 
-                        res.status(400)
-                            .json(_useJoiError ? errorObj : defaultErr);
+                        _useJoiError
+                            ? sendError(400, {}, res, message)
+                            : sendError(400, {}, res, defaultErr);
                     }
                 });
         }
