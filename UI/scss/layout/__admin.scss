@@ -1,0 +1,375 @@
+.admin-container{
+   	width: 100%;
+    position:absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+   	height:88%;
+    background-color: $theme-white-sec;
+    & .body-contant-navigation{
+      width:98%;
+      margin-top: 10px;
+      height:100%;
+      padding: 10px;
+      background-color: $theme-white-sec;
+
+      & .tast_content_main
+        {
+          width: 100%;
+          background-color: $theme-primary-white;
+          width: 100%;
+          border:0;
+          border-spacing: 0;
+          border-spacing: 0;
+          -webkit-border-horizontal-spacing: 0px;
+          -webkit-border-vertical-spacing: 0px;
+          border-collapse: collapse;
+          & tr{
+            & td{
+              & .left-navigation{
+                width: 250px;
+                padding-bottom: 30px;
+                border-radius: 10px;
+                   background-color: $theme-primary-white;
+                 height:100%;
+                   border-radius: 5px;
+                  -webkit-box-shadow:0px 0px 6px $theme-white-borders;
+                  -moz-box-shadow:0px 0px 6px $theme-white-borders;
+                  & #left-nav-container{
+                    & .left-navigation-drawer{
+                      & .left-navigation-dawer-profile-section{
+                        width: auto;
+                        height: 60px;
+                        & .left-navigation-dawer-profile-section-profile-image-div{
+                          height: inherit;
+                          width: 60px;
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: -webkit-flex;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          & .left-navigation-dawer-profile-section-profile-image{
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                          }
+                        }
+                        & .left-navigation-dawer-profile-section-profile-name-div{
+                          width: 155px;
+                          height: 15px;
+                          margin-left: 60px;
+                          margin-top: -47px;
+                          & .left-navigation-dawer-profile-section-profile-name{
+                            font-size: 14px;
+                            color: gray;
+                          }
+                        }
+                        & .left-navigation-dawer-profile-section-profile-status-div{
+                          width: 155px;
+                          height: 15px;
+                          margin-left: 60px;
+                          & .left-navigation-dawer-profile-section-profile-status{
+                            font-size: 12px;
+                            color: green;
+                            font-family: Roboto-Medium
+                            }
+                        }
+                      }
+                      & .left-navigation-dawer-opened-buttons{
+                        height: 40px;
+                        width: 200px;
+                        cursor: pointer;
+                        border: 0px solid gray;
+                        border-bottom-right-radius: 20px;
+                        border-top-right-radius: 20px;
+                        background-color: $theme-near-white;
+                        margin-top: 3px;
+                        
+                        & .left-navigation-dawer-opened-buttons-icons-div{
+                          height: inherit;
+                          margin-left: 10px;
+                          width: 30px;
+                          border: 0px solid gray;
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: -webkit-flex;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          & .left-navigation-dawer-opened-buttons-icons{
+                            width: 15px;
+                            height: 15px;
+                            fill: $theme-primary-color;
+                          }
+                        }
+                        & .left-navigation-dawer-opened-buttons-title-div{
+                          margin-left: 40px;
+                          width: 160px;
+                          height: 25px;
+                          margin-top: -26px;
+                          float: left;
+                          & .left-navigation-dawer-opened-buttons-title{
+                            & .home-links{
+                              color: gray;
+                              font-size: 13px;
+                              text-decoration: none;
+                              & :focus{
+                                color: $theme-primary-color;
+                              }
+                            }
+                          }
+                        }
+
+                      }
+                      & .left-navigation-dawer-opened-buttons:hover{
+                        border-left: 3px solid $theme-primary-color;
+                        background-color: $theme-row-hover;
+                        }
+                      & .left-navigation-dawer-opened-buttons.visible{
+                        border-left: 3px solid $theme-primary-color;
+                        background-color: rgb(248, 241, 248);
+                      }  
+                    }      
+                  }
+                } 
+            }
+            & .task-content-td{
+              width: 100%;
+              & .task-content{
+                padding: 15px;
+                margin-left: 10px;
+                width: 98%;
+                height: 100%;
+                border-color: $theme-primary-color;
+                background-color:  $theme-primary-white;
+                border-radius: 5px;
+                   -webkit-box-shadow:0px 0px 6px $theme-white-borders;
+                  -moz-box-shadow:0px 0px 6px $theme-white-borders;
+                 & .content-list{
+                  background-color: $theme-primary-white;
+                  border: 0px solid gray;
+                  width: 96;
+                  margin: 0;
+                  height: inherit;
+                  width: 100%;
+                  & .content-header{
+                    border: 0px solid green;
+                    height: 40px;
+                    & .g-h-title{
+                      border: 0px solid gray;
+                      height: 40px;
+                      width: 200px;
+                      border: 0px solid gray;
+                     }
+                    & .g-h-title.title{
+                      width: 80px;
+                      float: left;
+                      & span{
+                        font-size: 20px;
+                        height: 40px;
+                        color: $theme-primary-color;
+                      }
+                     }
+                    & .g-h-title.search{
+                      border: 0px solid gray;
+                      float: right;
+                      display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      & input{
+                        height: 25px;
+                        padding-left: 10px;
+                        margin: 0;
+                      }
+                      & .search_contents_tools{
+                        float: right;
+                        margin: 0;
+                      }
+                      & .g-h-menu{
+                        float: left;
+                        width: 40px;
+                        height: 40px;
+                        border: 0px solid gray;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 0;
+                      }
+                      & .g-h-menu.inbox.reflesh{
+                        & button{   
+                          border-bottom-right-radius: 10px;
+                          border-top-right-radius: 10px;
+                          background-color: $theme-primary-color;
+                          height: 2.5em;
+                          width: 2.5em;
+                          & img{
+                            height: 10px;
+                            width: 10px;
+                          }
+                        }
+                      }
+                      
+                    }
+                    }
+                  & .line{
+                    background-color: $theme-white-sec;
+                    width: 100%;
+                    height: 1px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    } 
+                  & .content-menus{
+                    border: 0px solid green;
+                    height: 40px;
+                    & .g-h-menu{
+                      float: left;
+                      width: 40px;
+                      height: 40px;
+                      border: 0px solid gray;
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: -webkit-flex;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border: 0;
+
+                      & .buttons-headers{
+                        background-color: $theme-primary-color;
+                        height: 35px;
+                        width:  35px;
+                        border-radius:0.8em;
+                        & img{
+                          height: 10px;
+                          width: 10px;
+                        }
+                    }
+                    }
+
+                    }  
+                  & .content_list_table{
+                    overflow:auto;
+                    border: 0px solid gray;
+                    width: 100%;
+                    max-height: 500px;
+                    & .groups-table{
+                      width: 100%;
+                      border:0;
+                      border-spacing: 0;
+                      border-spacing: 0;
+                      & .g-t-tr{
+                        height: 50px;
+                      
+                        display: table-row;
+                        vertical-align: inherit;
+                        border-color: inherit;
+                        border-top-color: inherit;
+                        border-right-color: inherit;
+                        border-bottom-color: inherit;
+                        border-left-color: inherit;
+                        cursor: pointer;
+                        & .g-t-td.check{
+                          width: 50px;
+                          & .chk_unchk_icon{
+                            margin-bottom: 20px;
+                            display: block;
+                            position: relative;
+                            padding-left: 10px;
+                            cursor: pointer;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            & input {
+                              position: absolute;
+                              opacity: 0;
+                              cursor: pointer;
+                              height: 0;
+                              width: 0;
+                            }
+                            & .checkmark {
+                              position: absolute;
+                              height: 20px;
+                              width: 20px;
+                              border-radius: 5px;
+                              background-color: #eee;
+                            }
+                            & .checkmark:after {
+                              content: "";
+                              position: absolute;
+                              display: none;
+                            }
+                          }
+                          & .chk_unchk_icon:hover input ~ .checkmark {
+                            background-color: #ccc;
+                          }
+                          & .chk_unchk_icon input:checked ~ .checkmark {
+                            background-color: $theme-primary-color;
+                          }
+                          & .chk_unchk_icon input:checked ~ .checkmark:after {
+                            display: block;
+                          }
+                          & .chk_unchk_icon .checkmark:after {
+                            left: 7px;
+                            top: 5px;
+                            width: 3px;
+                            height: 7px;
+                            border: solid white;
+                            border-width: 0 3px 3px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                          }
+                        }
+
+                        & .g-t-td{
+                           & .img-user-row{
+                            margin-top: 5px;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                          }
+                        }
+                        & .g-t-td.name{
+                          font-size: 14px;
+                          color: $theme-primary-color;
+                        }
+                        & .g-t-td.date{
+                          font-size: 12px;
+                          color: gray;
+                        }
+                        & .g-t-td.feed{
+                          font-size: 12px;
+                          color: gray;
+                        }
+                        & .g-t-td.sender{
+                          font-size: 14px;
+                          color: $theme-primary-color;
+                        }
+                      }
+                      & .g-t-tr:hover{
+                        background-color: $theme-row-hover;
+                      }
+                      & .g-t-tr.tr-backgound{
+                        background-color: #FAFAFA;
+                        }
+                    }
+
+                   }  
+                    
+
+
+                 }
+              }
+            } 
+          }
+        }
+      }
+	}  
