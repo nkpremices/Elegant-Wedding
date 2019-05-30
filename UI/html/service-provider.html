@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Elegant Wedding</title>
+  </head>
+  <body>
+    <nav class="userprofile-top-navigation fixed">
+      <div class="userprofile-logo-img in-top">
+        <img class="userprofile-icon-logo " src="../assets/download.png" />
+      </div>
+      <div class="userprofile-name-div in-top">
+        <span class="userprofile-web-name"
+          ><b><strong>Elegant</strong></b
+          >Wedding</span
+        >
+      </div>
+      <div class="userprofile-profile-nav">
+        <div class="userprofile-icon-notification-nav">
+          <div class="userprofile-icon-notification-icon-nav">
+            <img
+              class="userprofile-icon-notification"
+              src="../assets/iconnotification.png"
+              alt=""
+            />
+            <div class="userprofile-notification-text-nav">
+              <span class="userprofile-notification-text">3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="userprofile-icon-profile-nav">
+          <img
+            class="userprofile-icon-profile"
+            src="../assets/profile.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="dashboard">
+        <div class="left-panel">
+          <div class="user-detail">
+            <div class="user-profile">
+              <img src="../assets/profile.png" alt="profile" />
+            </div>
+            <div class="user-detail__name">
+              Eric Rukundo <br />
+              <span>Interior Decorator</span>
+            </div>
+            <div class="user-detail__content">
+              <div class="bookings">
+                <span>&#10004; booked:</span> 120 times
+              </div>
+              <div class="views">
+                <span> &#128065; Viewed:</span> 200 times today
+              </div>
+              <div class="posts"><span>&#128213; Posts:</span> 3</div>
+            </div>
+          </div>
+          <div class="user-bookings">
+            <div class="user-bookings__header">
+              <h3>Recently booked on</h3>
+            </div>
+            <div class="user-booking__list"></div>
+          </div>
+          <div class="user-detail__new">
+            <button onclick="post()">new</button>
+          </div>
+        </div>
+        <div class="right-panel">
+          <div class="recent-posts" id="profile"></div>
+        </div>
+      </div>
+    </main>
+
+    <form class="post-form" id="post-form">
+        <div class="info" id="info"></div>
+      <div class="heading" id='before-err'>
+        <label for="heading">Name</label>
+        <input type="text" name="heading" id="heading" />
+      </div>
+      <div class="description">
+        <label for="description">Description</label>
+        <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+      </div>
+      <div class="upload">
+        <input type="file" name="pictures" id="pic" />
+      </div>
+      <div class="action-buttons">
+        <button class="cancel" type="button" onclick="cancel()">Close</button>
+        <button class="save" type="button" onclick="savePost()">Save</button>
+      </div>
+    </form>
+
+    <form class="post-form" id="edit-post"></form>
+    <script src="../js/user-profile.js"></script>
+  </body>
+</html>
