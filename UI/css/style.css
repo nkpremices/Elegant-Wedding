@@ -1459,4 +1459,169 @@ body .userprofile-body-contant-navigation .userprofile-menu-item-books .userprof
   color: #1c1c1d;
 }
 
+.dashboard {
+  display: flex;
+  margin-top: 5%;
+  height: 125vh;
+  overflow: hidden;
+}
+.dashboard .left-panel {
+  width: 30vw;
+  position: fixed;
+  margin-left: 3%;
+}
+.dashboard .left-panel .user-detail {
+  border: 2px solid #b64d7e;
+  box-shadow: 8px 8px 8px 8px rgba(182, 77, 126, 0.1);
+}
+.dashboard .left-panel .user-detail__name {
+  text-align: center;
+  font-size: 2.4em;
+}
+.dashboard .left-panel .user-detail__name span {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.dashboard .left-panel .user-detail__content {
+  margin-left: 26%;
+  margin-top: 2%;
+  font-size: 3.3em;
+}
+.dashboard .left-panel .user-detail__new {
+  margin-top: 2%;
+  text-align: center;
+}
+.dashboard .left-panel .user-detail__new button {
+  text-decoration: none;
+  color: white;
+  background-color: #b64d7e;
+  padding: 1.8em 2.8em;
+  width: 100%;
+  margin-top: 4%;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin-bottom: 4%;
+}
+.dashboard .left-panel .user-detail .user-profile {
+  width: 100%;
+  background: #ebb2e7;
+  background: -webkit-radial-gradient(center, #ebb2e7, #b64d7e);
+  background: -moz-radial-gradient(center, #ebb2e7, #b64d7e);
+  background: radial-gradient(ellipse at center, #ebb2e7, #b64d7e);
+}
+.dashboard .left-panel .user-detail .user-profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 41%;
+  margin-top: 20%;
+}
+.dashboard .left-panel .user-bookings {
+  margin-top: 2%;
+  border: 2px solid #b64d7e;
+  box-shadow: 8px 8px 8px 8px rgba(182, 77, 126, 0.1);
+}
+.dashboard .left-panel .user-bookings__header {
+  text-align: center;
+  background: -webkit-radial-gradient(center, #ebb2e7, #b64d7e);
+  background: -moz-radial-gradient(center, #ebb2e7, #b64d7e);
+  background: radial-gradient(ellipse at center, #ebb2e7, #b64d7e);
+}
+.dashboard .left-panel .user-bookings__header h3 {
+  font-size: 3.3em;
+  text-transform: capitalize;
+}
+.dashboard .right-panel {
+  height: 967px;
+  width: 800px;
+  transform: translate(62%, 2%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.dashboard .right-panel .post-user-profile {
+  transform: translate(10%, 0%);
+  width: 46vw;
+  border: 2px solid #b64d7e;
+}
+.dashboard .right-panel .post-user-profile .edit-post:visited,
+.dashboard .right-panel .post-user-profile .edit-post:link {
+  margin-left: 45em;
+  text-decoration: none;
+  color: #000;
+}
+.dashboard .right-panel .post-user-profile .post-content__img .movement-arrow a.left {
+  visibility: hidden;
+  font-size: 10.4em;
+  background-color: #b64d7e;
+  text-decoration: none;
+  color: white;
+  margin: 0 40% 0 -2%;
+}
+
+.post-form {
+  overflow: hidden;
+  font-size: 3.7em;
+  transform: translate(0%, -200%);
+  width: 96vw;
+  height: 150vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #b64d7e;
+  z-index: 3000;
+  position: absolute;
+  text-align: center;
+  transition: 0.6s ease-in;
+}
+.post-form .info {
+  display: none;
+  margin-top: 27%;
+  margin-left: 27%;
+  color: #fff;
+  border-radius: 8px;
+  height: 7vh;
+  width: 59%;
+  transition: 0.4s ease-in;
+}
+.post-form .info p {
+  padding: 0.8em;
+}
+.post-form .heading {
+  margin-bottom: 4%;
+}
+.post-form .heading label {
+  margin-right: 7.7%;
+}
+.post-form .heading input {
+  border: 1px solid #000;
+  padding: 1.2em 1em;
+  border-radius: 3px;
+  width: 65%;
+}
+.post-form .description label {
+  margin-right: 2%;
+  margin-top: -45%;
+}
+.post-form .description textarea {
+  border: 1px solid #000;
+  padding: 1.2em 1em;
+  border-radius: 3px;
+  width: 65%;
+}
+.post-form .upload {
+  margin-top: 3%;
+}
+.post-form .action-buttons {
+  margin: 2% 0 0 63%;
+}
+.post-form .action-buttons button,
+.post-form .action-buttons input {
+  text-decoration: none;
+  color: white;
+  background-color: #b64d7e;
+  padding: 1.8em 2.8em;
+}
+
+#before-err-edit {
+  margin-top: 25%;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -255,7 +255,6 @@ const postEdit = () => {
     //clearing inputs
     heading.value = '';
     desc.value = '';
-
   }
 
 }
