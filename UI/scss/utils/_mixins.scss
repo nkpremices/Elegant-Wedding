@@ -1,0 +1,13 @@
+@mixin center {
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin input {
+  border: 1px solid $theme-primary-dark;
+  padding: 1.2em 1em;
+  border-radius: 3px;
+}
