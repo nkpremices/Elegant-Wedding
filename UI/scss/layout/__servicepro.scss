@@ -1,0 +1,205 @@
+.dashboard {
+  display: flex;
+  margin-top: 5%;
+  height: 125vh;
+  overflow: hidden;
+
+  & .left-panel {
+    width: 30vw;
+    position: fixed;
+    margin-left: 3%;
+    & .user-detail {
+      border: 2px solid $theme-primary-color;
+      box-shadow: 8px 8px 8px 8px
+        rgba($color: $theme-primary-color, $alpha: 0.1);
+
+      &__name {
+        text-align: center;
+        font-size: 2.4em;
+        & span {
+          font-weight: bold;
+          font-size: 1.3em;
+        }
+      }
+      &__content {
+        margin-left: 26%;
+        margin-top: 2%;
+        font-size: 3.3em;
+      }
+      &__new {
+        margin-top: 2%;
+        text-align: center;
+        & button {
+          text-decoration: none;
+          color: white;
+          background-color: #b64d7e;
+          padding: 1.8em 2.8em;
+          width: 100%;
+          margin-top: 4%;
+          text-transform: uppercase;
+          font-size: 1.8em;
+          margin-bottom: 4%;
+        }
+      }
+      & .user-profile {
+        width: 100%;
+        background: rgba(235, 178, 231, 1);
+        background: -webkit-radial-gradient(
+          center,
+          rgba(235, 178, 231, 1),
+          rgba(182, 77, 126, 1)
+        );
+        background: -moz-radial-gradient(
+          center,
+          rgba(235, 178, 231, 1),
+          rgba(182, 77, 126, 1)
+        );
+        background: radial-gradient(
+          ellipse at center,
+          rgba(235, 178, 231, 1),
+          rgba(182, 77, 126, 1)
+        );
+        & img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-left: 41%;
+          margin-top: 20%;
+        }
+      }
+    }
+
+    & .user-bookings {
+      margin-top: 2%;
+      border: 2px solid $theme-primary-color;
+      box-shadow: 8px 8px 8px 8px
+        rgba($color: $theme-primary-color, $alpha: 0.1);
+
+      &__header {
+        text-align: center;
+        background: -webkit-radial-gradient(
+          center,
+          rgba(235, 178, 231, 1),
+          rgba(182, 77, 126, 1)
+        );
+        background: -moz-radial-gradient(
+          center,
+          rgba(235, 178, 231, 1),
+          rgba(182, 77, 126, 1)
+        );
+        background: radial-gradient(
+          ellipse at center,
+          rgba(235, 178, 231, 1),
+          rgba(182, 77, 126, 1)
+        );
+
+        & h3 {
+          font-size: 3.3em;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  & .right-panel {
+    height: 967px;
+    width: 800px;
+    transform: translate(62%, 2%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    & .post-user-profile {
+      transform: translate(10%, 0%);
+      width: 46vw;
+      border: 2px solid $theme-primary-color;
+      .edit-post:visited,
+      .edit-post:link {
+        margin-left: 45em;
+        text-decoration: none;
+        color: $theme-primary-dark;
+        
+      }
+      & .post-content {
+        &__img {
+          & .movement-arrow {
+            a.left {
+              visibility: hidden;
+              font-size: 10.4em;
+              background-color: #b64d7e;
+              text-decoration: none;
+              color: white;
+              margin: 0 40% 0 -2%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.post-form {
+  overflow: hidden;
+  font-size: 3.7em;
+  transform: translate(0%, -200%);
+  width: 96vw;
+  height: 150vh;
+  background-color: rgba($color: $theme-primary-white, $alpha: 0.8);
+  border: 2px solid $theme-primary-color;
+  z-index: 3000;
+  position: absolute;
+  text-align: center;
+  transition: 0.6s ease-in;
+
+  & .info {
+    display: none;
+    margin-top: 27%;
+    margin-left: 27%;
+    color: #fff;
+    border-radius: 8px;
+    height: 7vh;
+    width: 59%;
+    transition: 0.4s ease-in;
+    & p {
+      padding: 0.8em;
+    }
+  }
+  & .heading {
+    margin-bottom: 4%;
+    & label {
+      margin-right: 7.7%;
+    }
+    & input {
+      @include input;
+      width: 65%;
+    }
+  }
+
+  & .description {
+    & label {
+      margin-right: 2%;
+      margin-top: -45%;
+    }
+    & textarea {
+      @include input;
+      width: 65%;
+    }
+  }
+
+  & .upload {
+    margin-top: 3%;
+  }
+  & .action-buttons {
+    margin: 2% 0 0 63%;
+    & button,
+    input {
+      text-decoration: none;
+      color: white;
+      background-color: #b64d7e;
+      padding: 1.8em 2.8em;
+    }
+  }
+}
+
+#before-err-edit{
+  margin-top: 25%;
+}
+
