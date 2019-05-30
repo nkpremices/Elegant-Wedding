@@ -3,12 +3,13 @@ import models, { sequelize } from '../../db/models';
 
 const bookings = {
     async createBooking(req, res) {
-        const { bookedDate, userId, postId } = req.body;
+        const { bookedDate, postId } = req.body;
+        const { id } = req.user;
         await models.Bookings.create(
             {
-                bookedDate: req.body.bookedDate,
-                userId: req.body.userId,
-                postId: req.body.postId,
+                bookedDate,
+                userId: id,
+                postId,
             },
 
         );
@@ -16,7 +17,7 @@ const bookings = {
             status: 201,
             message: 'Successfully booked',
             data: {
-                bookedDate, userId, postId,
+                bookedDate, id, postId,
             },
         });
     },
@@ -70,6 +71,26 @@ const bookings = {
                 status: 404,
                 message: 'No bookings found!',
             });
+        });
+    },
+    async createComment(req, res) {
+        const { message, postId } = req.body;
+        const { id, firstName, lastName } = req.user;
+        await models.Comments.create(
+            {
+                message,
+                userId: id,
+                postId,
+            },
+
+        );
+        const comment = message;
+        return res.status(201).json({
+            status: 201,
+            message: 'Thank you for contributing to this post!',
+            data: {
+                firstName, lastName, comment,
+            },
         });
     },
 
