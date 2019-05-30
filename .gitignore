@@ -6,7 +6,10 @@ coverage
 
 # Dependency directories
 node_modules/
+jspm_packages/
 
+# TypeScript v1 declaration files
+typings/
 # Optional npm cache directory
 .npm
 
@@ -25,5 +28,5 @@ node_modules/
 # Ignore Package-lock file
 package-lock.json
 
-# Ignore .DS_Store file
+# remove the mac os folder config file
 .DS_Store
