@@ -299,6 +299,22 @@ html, body {
     float: none;
   }
 }
+.info {
+  display: none;
+  position: absolute;
+  top: 9%;
+  left: 36%;
+  background-color: red;
+  height: 4vh;
+  width: 32vw;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+.info p {
+  padding: 1em;
+}
+
 .featured {
   margin-top: 4em;
 }
@@ -654,6 +670,22 @@ footer .copyright {
     float: none;
   }
 }
+.info {
+  display: none;
+  position: absolute;
+  top: 9%;
+  left: 36%;
+  background-color: red;
+  height: 4vh;
+  width: 32vw;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+.info p {
+  padding: 1em;
+}
+
 .signup-header {
   width: 100%;
   min-height: 60px;
