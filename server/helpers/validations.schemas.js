@@ -24,6 +24,7 @@ const name = string
 const number = Joi
     .number()
     .integer()
+    .positive()
     .required();
 
 /**
@@ -42,7 +43,7 @@ export default {
 
         type: string
             .lowercase()
-            .valid('admin', 'customer', 'provider')
+            .valid('customer', 'provider')
             .required(),
 
         phone: string
@@ -65,5 +66,17 @@ export default {
             .required(),
 
         price: number,
+    }),
+
+    payment: Joi.object().keys({
+        fullName: string
+            .required(),
+
+        expirationDate: Joi
+            .date()
+            .required(),
+
+        cvc: number,
+        accountNumber: number,
     }),
 };
