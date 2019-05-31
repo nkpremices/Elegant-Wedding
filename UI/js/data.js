@@ -1,6 +1,6 @@
 const read = JSON.parse(localStorage.getItem('myStorage'));
 let users = [];
-
+localStorage.setItem('myStorage', JSON.stringify(users));
 if (read.length > 0) {
     read.forEach(el => users.push(el));
 } else {
