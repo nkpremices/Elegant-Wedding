@@ -10,7 +10,8 @@ const subscriptions = (sequelize, DataTypes) => {
         Subscriptions.belongsTo(models.PaymentInfo);
         Subscriptions.belongsTo(models.Packages);
     };
-    return subscriptions;
+
+    return Subscriptions;
 };
 
 export default subscriptions;

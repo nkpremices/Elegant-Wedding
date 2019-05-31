@@ -4,7 +4,7 @@
   "description": "A platform to provide elegant wedding for everyone",
   "main": "index.js",
   "scripts": {
-    "start": "npm run createAdmin && nodemon --exec babel-node ./server/server.js",
+    "start": "npm run createAdmin && npm run createData && nodemon --exec babel-node ./server/server.js",
     "test": "nyc --reporter=text ./node_modules/.bin/mocha --recursive ./server/tests/* --exit --require @babel/register",
     "lint": "eslint ./",
     "coverage": "nyc npm run test && nyc report --reporter=text-lcov  | coveralls ",
