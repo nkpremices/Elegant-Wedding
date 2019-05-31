@@ -1,11 +1,15 @@
-const read = JSON.parse(localStorage.getItem('myStorage'));
+// localStorage.setItem('myStorage', JSON.stringify(users));
 let users = [];
-localStorage.setItem('myStorage', JSON.stringify(users));
-if (read.length > 0) {
-    read.forEach(el => users.push(el));
-} else {
-    localStorage.setItem('myStorage', JSON.stringify(users));
+const read = JSON.parse(localStorage.getItem('myStorage')); 
+if(read.length === undefined){ 
+} else{
+    if (read.length > 0) {
+        read.forEach(el => users.push(el));
+    } else {
+        localStorage.setItem('myStorage', JSON.stringify(users));
+    }
 }
+
 
 // get signup data
 const signup = () => {
