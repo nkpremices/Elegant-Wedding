@@ -108,6 +108,66 @@ const bookings = {
             },
         });
     },
+    async filterResult(req, res) {
+        const { service, location } = req.query;
+        if (service && location) {
+            await models.Posts.findAll({
+                attributes: [
+                    'id',
+                    'header',
+                ],
+                where: {
+                    location,
+
+                },
+                include: [
+                    {
+                        model: models.Services,
+                        attributes: [],
+                        where: {
+                            name: service,
+                        },
+                    },
+                ],
+            }).then((data) => {
+                if (data.length > 0) {
+                    return res.status(200).json({
+                        data,
+                    });
+                }
+                return res.status(404).json({
+                    status: 404,
+                    message: 'Not found!',
+                });
+            });
+        }
+        await models.Posts.findAll({
+            attributes: [
+                'id',
+                'header',
+            ],
+            include: [
+                {
+                    model: models.Services,
+                    attributes: [],
+                    where: {
+                        name: service,
+                    },
+                },
+            ],
+        }).then((data) => {
+            if (data.length > 0) {
+                return res.status(200).json({
+                    data,
+                });
+            }
+            return res.status(404).json({
+                status: 404,
+                message: 'Not found!',
+            });
+        });
+    },
+
 };
 
 export default bookings;
