@@ -5,7 +5,7 @@ const subscriptions = (sequelize, DataTypes) => {
         startDate: DataTypes.DATE,
         endDate: DataTypes.DATE,
     });
-    Subscriptions.associate = function (models) {
+    Subscriptions.associate = (models) => {
         Subscriptions.belongsTo(models.Users);
         Subscriptions.belongsTo(models.PaymentInfo);
         Subscriptions.belongsTo(models.Packages);
