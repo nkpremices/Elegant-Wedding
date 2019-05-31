@@ -20,7 +20,7 @@ customerRouter.post('/comments', authorization, validateComment.validateBooking,
 customerRouter.post('/posts/ratings', authorization,
     validateRating.validatePostRating, postId.checkPost, customer.createRating);
 
-customerRouter.get('/posts/',
+customerRouter.get('/posts',
     customer.filterResult);
 
 
