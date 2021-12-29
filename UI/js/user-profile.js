@@ -255,10 +255,6 @@ const postEdit = () => {
     //clearing inputs
     heading.value = '';
     desc.value = '';
-    // setInterval(() => {
-    //   editModal.style.transform = 'translate(0%,-200%)';
-    //   editModal.innerHTML = ''
-    // },200);
   }
 
 }

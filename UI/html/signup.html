@@ -30,8 +30,9 @@
       </div>
     </header> 
 
-
+  
      <div class="signup-setup_body_container">
+
       <div class="signup-container">
         <section id="signup-signup-content-p">
             <div class="signup-task-content user-info active">
@@ -52,10 +53,10 @@
                       </div>
                       <div class="signup-input-field-div userrole">
                           <span class="signup-input-field-title">As</span><br>  
-                          <select  class="signup-input-field">
-                             <option selected>...</option> 	 
-                             <option>Customer</option> 
-                             <option>Service Provider</option>
+                          <select  class="signup-input-field" id="account-type">
+                             <option value='1' selected>...</option> 	 
+                             <option value='2'>Customer</option> 
+                             <option value='3'>Service Provider</option>
                           </select>	
                        </div>
                       <div class="signup-input-field-div email">
@@ -72,7 +73,7 @@
                             <button class="signup-btn-cancel">Cancel</button>
                           </div>
                           <div class="signup-button create">
-                            <button class="signup-btn-create">Create Account</button>
+                            <button class="signup-btn-create" id='signup' onclick="signup()">Create Account</button>
                           </div>
                       </div>
                 </div>
@@ -87,6 +88,6 @@
 
 
 
-
+  <script src="../js/data.js"></script>
 </body>
 </html>
